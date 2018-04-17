@@ -50,6 +50,15 @@ class Customer{
                    
       return str; 
    }
+   
+   public void addItem(Item i){
+      selection.add(i);
+   }
+   
+   public void subtractPrice(double p){
+      wallet-=p;
+   }
+      
       
    
 }
