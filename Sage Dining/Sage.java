@@ -61,9 +61,24 @@ class Sage{
    }
    
    public static void order(){
-      System.out.println("What would you like to order?");
-      String str = console.nextLine();
+      int i=0;
+      for(Customer c: patrons){
+            System.out.println(i+" "+c.getName());
+            i++;
+      }
+      System.out.println("What number Customer are you?");
+      int pat = Integer.parseInt(console.nextLine());
       
+      int i=0;
+      for(Item c: items){
+            System.out.println(i+" "+c.getName());
+            i++;
+      }
+      System.out.println("What number item would you like to order?");
+      int str = Integer.parseInt(console.nextLine());
+      
+      patrons.get(pat).addItem(items.get(str));
+      patrons.get(pat).subtractPrice(items.get(str));
    }
 }
 
