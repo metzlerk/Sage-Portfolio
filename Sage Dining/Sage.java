@@ -61,10 +61,13 @@ class Sage{
    }
    
    public static void order(){
+      System.out.println("What would you like to order?");
+      String str = console.nextLine();
+      
    }
 }
 
-//-------------------- End of PizzaParlor class --------------------//
+//-------------------- End of Sage class --------------------//
 
 
 
