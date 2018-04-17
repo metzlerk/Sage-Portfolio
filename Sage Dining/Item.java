@@ -2,7 +2,7 @@
 
 class Item{
    // instance variables
-   private int inventory; //# of cheese pizzas
+   private int inventory; 
    private String name;
    private double price;
 
