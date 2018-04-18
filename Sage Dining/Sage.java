@@ -53,7 +53,7 @@ class Sage{
       }
       
    }
-   
+   //Adds a new customer to the list of customers 
    public static void newCustomer(){
       System.out.println("What is your name?");
       String str = console.nextLine();
@@ -61,7 +61,7 @@ class Sage{
       double w = Double.parseDouble(console.nextLine());
       patrons.add(new Customer(str, w));
    }
-   
+   //Adds a new item to the list of existing items
    public static void newItem(){
       System.out.println("What item?");
       String str = console.nextLine();
@@ -72,7 +72,7 @@ class Sage{
       items.add(new Item(str, pr, i));
      
    }
-   
+   // Gives the customer the ordered item and subtracts the money spent on the item from the customer's remaining balance
    public static void order(){
       int i=0;
       for(Customer c: patrons){
