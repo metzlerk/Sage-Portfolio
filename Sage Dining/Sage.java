@@ -8,6 +8,13 @@ class Sage{
    private static ArrayList <Item> items = new <Item> ArrayList();
    
    public static void main(String[] args){
+      try {
+         Scanner in = new Scanner(new File("customer.txt"));
+      }
+      catch (Exception e){
+         System.out.println("Exception:" + e);
+         System.exit(0);
+        }
       menu();
    }
    
