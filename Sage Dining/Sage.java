@@ -10,7 +10,8 @@ class Sage{
    
    public static void main(String[] args){
       try {
-         Scanner in = new Scanner(new File("customer.txt"));
+         Scanner inConsumer = new Scanner(new File("customer.txt"));
+         Scanner inItems = new Scanner (new File("items.txt")));
          }
       catch (FileNotFoundException e) {
          e.printStackTrace();
@@ -69,6 +70,7 @@ class Sage{
       System.out.print("What is the inventory?");
       int i = Integer.parseInt(console.nextLine());
       items.add(new Item(str, pr, i));
+     
    }
    
    public static void order(){
