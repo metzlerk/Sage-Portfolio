@@ -6,13 +6,13 @@ public class SageTester{
    public static void main(String[] args){
       
       Scanner console = new Scanner(System.in);
-      System.out.println("What is the name of your pizza parlor?");
-      String name = console.nextLine();
+      //System.out.println("What is the name of your pizza parlor?");
+      //String name = console.nextLine();
       
     //drawPizza(name);
       
           
-    
+    //make this fileinput
       System.out.println("What is your account balance");
       double a = console.nextDouble();    
       System.out.println("How much Cheese do you have in supply?");
@@ -88,55 +88,6 @@ public class SageTester{
       }
    }
 
-   private static void drawPizza(String name){
-      DrawingTool pen;                     
-      SketchPad paper;
-      
-      paper = new SketchPad(1000, 700);     
-      pen = new DrawingTool(paper);         
-    
-      pen.setWidth(10);                     
-      pen.setColor(Color.orange);
-      
-      pen.drawCircle(100);
-      pen.setColor(Color.white);
-      pen.setWidth(100);
-      pen.setDirection(45);
-      pen.forward(100);
-      pen.up();
-      pen.move(0,0);
-      pen.setWidth(10);
-      pen.down();
-      pen.setColor(Color.orange);
-      pen.setDirection(75);
-      pen.forward(100);
-      pen.move(0,0);
-      pen.setDirection(15);
-      pen.forward(100);
-      pen.up();
-      pen.move(0,-50);
-      pen.setColor(Color.red);
-      pen.down();
-      pen.drawCircle(5);
-      pen.up();
-      pen.move(-50,-50);
-      pen.down();
-      pen.drawCircle(5);
-      pen.up();
-      pen.move(-50,0);
-      pen.down();
-      pen.drawCircle(5);
-      pen.up();
-      pen.move(50,-50);
-      pen.down();
-      pen.drawCircle(5);
-      pen.up();
-      pen.move(-50,50);
-      pen.down();
-      pen.drawCircle(5);
-      pen.up();
-      pen.move(-50,-200);
-      pen.drawString(name);
-   }
+  
 
 }
