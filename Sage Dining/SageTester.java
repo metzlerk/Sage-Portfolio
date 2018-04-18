@@ -14,11 +14,11 @@ public class SageTester{
           
     //make this fileinput
       try {
-         FileInputStream textFile = new FileInputStream ("customer.txt");
-         Scanner fileIn = new Scanner (textFile);
+         Scanner in = new Scanner(new File("customer.txt"));
       }
-      catch (FileNotFoundException fnfe){
-         System.out.println("File customer.txt was not found!);
+      catch (Exception e){
+         System.out.println("Exception:" + e);
+         System.exit(0);
         }
                            
       System.out.println("What is your account balance");
