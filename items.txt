@@ -1,0 +1,24 @@
+Cheese Pizza
+2.00
+45
+Pepperoni Pizza 
+2.25
+40
+Chicken Nuggets
+3.90
+50
+Cardinal Meal
+6.75
+100
+French Fries
+1.85
+150
+Garlic Knots 
+.95
+15
+Soft Drink
+1.60
+500
+Donut
+1.60
+50
