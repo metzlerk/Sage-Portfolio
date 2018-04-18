@@ -13,6 +13,14 @@ public class SageTester{
       
           
     //make this fileinput
+      try {
+         FileInputStream textFile = new FileInputStream ("customer.txt");
+         Scanner fileIn = new Scanner (textFile);
+      }
+      catch (FileNotFoundException fnfe){
+         System.out.println("File customer.txt was not found!);
+        }
+                           
       System.out.println("What is your account balance");
       double a = console.nextDouble();    
       System.out.println("How much Cheese do you have in supply?");
