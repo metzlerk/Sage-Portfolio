@@ -1,6 +1,7 @@
 import java.util.*;
 import javax.swing.JFrame;
 import java.awt.*;
+import java.io.*;
 
 class Sage{
    private static Scanner console = new Scanner(System.in);
@@ -10,11 +11,14 @@ class Sage{
    public static void main(String[] args){
       try {
          Scanner in = new Scanner(new File("customer.txt"));
-      }
-      catch (Exception e){
-         System.out.println("Exception:" + e);
-         System.exit(0);
-        }
+         }
+      catch (FileNotFoundException e) {
+         e.printStackTrace();
+         } 
+      catch (IOException e){
+         e.printStackTrace();
+         }
+      
       menu();
    }
    
