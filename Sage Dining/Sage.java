@@ -72,7 +72,7 @@ class Sage{
       items.add(new Item(str, pr, i));
      
    }
-   // Gives the customer the ordered item and subtracts the money spent on the item from the customer's remaining balance
+   // Gives the customer the ordered item and subtracts the money spent on the item from the customer's remaining balance, also subtracts one from the total inventory of the item ordered. 
    public static void order(){
       int i=0;
       for(Customer c: patrons){
