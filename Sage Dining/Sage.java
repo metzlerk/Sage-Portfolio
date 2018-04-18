@@ -92,6 +92,7 @@ class Sage{
       
       patrons.get(pat).addItem(items.get(str));
       patrons.get(pat).subtractPrice(items.get(str));
+      item.order(str); 
    }
 }
 
