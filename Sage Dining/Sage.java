@@ -16,7 +16,7 @@ class Sage{
                patrons.add(new Customer(inConsumer.next(), Double.parseDouble(inConsumer.next())));
          }
          while(inItems.hasNext()){
-               items.add(new Item(inItems.nextLine(), Double.parseDouble(inItems.nextLine()), Double.parseDouble(inItems.nextLine())));
+               items.add(new Item(inItems.nextLine(), Double.parseDouble(inItems.nextLine()), Integer.parseInt(inItems.nextLine())));
          }
          }
       catch (FileNotFoundException e) {
