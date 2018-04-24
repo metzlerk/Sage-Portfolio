@@ -11,7 +11,7 @@ class Sage{
    public static void main(String[] args){
       try {
          Scanner inConsumer = new Scanner(new File("customer.txt"));
-         Scanner inItems = new Scanner (new File("items.txt")));
+         Scanner inItems = new Scanner (new File("items.txt"));
          }
       catch (FileNotFoundException e) {
          e.printStackTrace();
@@ -57,7 +57,7 @@ class Sage{
    public static void newCustomer(){
       System.out.println("What is your name?");
       String str = console.nextLine();
-      System.out.print("How much money do you have?");
+      System.out.println("How much money do you have?");
       double w = Double.parseDouble(console.nextLine());
       patrons.add(new Customer(str, w));
    }
@@ -82,26 +82,16 @@ class Sage{
       System.out.println("What number Customer are you?");
       int pat = Integer.parseInt(console.nextLine());
       
-      int i=0;
+      int j=0;
       for(Item c: items){
             System.out.println(i+" "+c.getName());
-            i++;
+            j++;
       }
       System.out.println("What number item would you like to order?");
       int str = Integer.parseInt(console.nextLine());
       
       patrons.get(pat).addItem(items.get(str));
       patrons.get(pat).subtractPrice((items.get(str)).getPrice());
-      item.get(str).order(); 
+      items.get(str).order(); 
    }
 }
-
-//-------------------- End of Sage class --------------------//
-
-
-
-
-
-
-
-
