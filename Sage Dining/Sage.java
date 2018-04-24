@@ -16,9 +16,7 @@ class Sage{
       catch (FileNotFoundException e) {
          e.printStackTrace();
          } 
-      catch (IOException e){
-         e.printStackTrace();
-         }
+      
       
       menu();
    }
@@ -57,7 +55,7 @@ class Sage{
    public static void newCustomer(){
       System.out.println("What is your name?");
       String str = console.nextLine();
-      System.out.println("How much money do you have?");
+      System.out.print("How much money do you have?");
       double w = Double.parseDouble(console.nextLine());
       patrons.add(new Customer(str, w));
    }
@@ -82,10 +80,10 @@ class Sage{
       System.out.println("What number Customer are you?");
       int pat = Integer.parseInt(console.nextLine());
       
-      int j=0;
+      i=0;
       for(Item c: items){
             System.out.println(i+" "+c.getName());
-            j++;
+            i++;
       }
       System.out.println("What number item would you like to order?");
       int str = Integer.parseInt(console.nextLine());
@@ -95,3 +93,5 @@ class Sage{
       items.get(str).order(); 
    }
 }
+
+//-------------------- End of Sage class --------------------//
