@@ -12,6 +12,9 @@ class Sage{
       try {
          Scanner inConsumer = new Scanner(new File("customer.txt"));
          Scanner inItems = new Scanner (new File("items.txt"));
+         while(inConsumer.hasNext()){
+               patrons.add(new Customer(inConsumer.next(), Double.parseDouble(inConsumer.next())));
+         
          }
       catch (FileNotFoundException e) {
          e.printStackTrace();
