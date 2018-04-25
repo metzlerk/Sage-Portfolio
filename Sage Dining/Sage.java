@@ -86,10 +86,10 @@ class Sage{
       System.out.println("What number Customer are you?");
       int pat = Integer.parseInt(console.nextLine());
       
-      i=0;
+      j=0;
       for(Item c: items){
             System.out.println(i+" "+c.getName());
-            i++;
+            j++;
       }
       System.out.println("What number item would you like to order?");
       int str = Integer.parseInt(console.nextLine());
